@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* General Styling */
+.hero-text {
+  color: green;
+  font-size: 25px;
+}
+
+.hero-main {
+  font-size: 90px;
+}
+
+.hero-img {
+  max-width: 444px;
+}
+
+/* Hero Button Responsiveness */
+.hero-btn {
+  position: relative;
+  z-index: -1;
+  height: 110px;
+  width: 200%;
+  padding: 20px 30px; /* Padding inside the button for better text alignment */
+}
+
+/* Button styling for small devices */
+@media (max-width: 576px) {
+  .hero-btn {
+    height: auto;
+    padding: 10px 15px;
+    width: 90%; /* Button will be responsive */
+  }
+
+  .logo-container {
+    width: 40px;
+    height: 40px; /* Reduce size of the circle icon */
+  }
+
+  .text-container {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Button styling for larger screens */
+@media (min-width: 992px) {
+  .hero-btn {
+    /* width: 80px;  */
+    padding: 15px 25px;
+  }
+
+  .logo-container {
+    width: 50px;
+    height: 50px; /* Keep circle size as is */
+  }
+
+  .text-container {
+    font-size: 18px; /* Adjust font size on larger screens */
+  }
+}
+
+/* Logo Rotate Section */
+.logo-rotate-container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
+}
+
+.logo-rotate {
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.1s ease-in-out;
+  will-change: transform;
+}
+
+.card-btn {
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+.text-color {
+  color: #82b440;
+}
+.logo-container {
+  background-color: #82b440;
+  width: 50px;
+  height: 50px;
+}
+.card-btn .logo-container i {
+  font-size: 20px;
+  color: #fff;
+}
+.card-img-2 {
+  width: 600px;
+  border-radius: 20px;
+}
+.custom-card {
+  width: 18rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+}
+
+.card-number {
+  font-size: 48px;
+  background-color: #d3d3d3;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.and-card {
+  background-color: #d3d3d3;
+}
+
+.card-title {
+  font-weight: bold;
+  margin-top: 15px;
+}
+.s-img {
+  border-radius: 30px;
+  height: 200px;
+  width: 100%;
+}
+.s-btn {
+  height: 50px;
+  border-radius: 50px;
+}
+.second-card {
+  border-radius: 20px;
+  width: 100%;
+}
+.second-text {
+  font-size: 20px;
+}
+.two-img {
+  width: 100%;
+  border-radius: 20px;
+  height: 420px;
+}
+.faq .ci {
+  background-color: #d3d3d3;
+}
+.circle {
+  display: inline-block;
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+  background-color: #82b440; /* Circle color */
+  border-radius: 50%; /* Make it a circle */
+  margin-right: 8px; /* Space between circle and text */
+  vertical-align: middle; /* Align circle vertically with text */
+}
+marquee span {
+  color: #fff;
+  margin-left: 100px;
+}
+input[type="text"] {
+  padding: 20px;
+  border-radius: 20px;
+}
+.icons {
+  font-size: 35px;
+}
+@media (max-width: 321px) {
+  .img-bar {
+    margin-left: 45px;
+  }
+  .btn-bar {
+    margin-left: 100px;
+  }
+  .navbar-second {
+    margin-top: 40px;
+  }
+  .card-img-2 {
+    max-width: 300px;
+  }
+}
+@media (max-width: 426px) {
+  .hero-btn {
+    font-size: 15px;
+    height: 150px;
+  }
+  .hero-img {
+    max-width: 300px;
+  }
+  .card-img-2 {
+    max-width: 300px;
+  }
+}
+@media (max-width: 769px) {
+  .hero-main {
+    font-size: 60px;
+  }
+  .hero-btn {
+    width: 100%;
+  }
+  .hero-img {
+    width: 33%;
+    top: -441px;
+  }
+  .card-btn {
+    padding: 8px 15px;
+  }
+  .logo-container {
+    width: 40px;
+    height: 40px;
+  }
+  .custom-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card-img-2 {
+    width: 350px;
+  }
+  .s-btn {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 1025px) {
+  .hero-img {
+    margin-top: 39px;
+  }
+  .custom-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .hero-btn {
+    width: 100%;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+  }
+}
